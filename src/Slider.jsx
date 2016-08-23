@@ -469,7 +469,7 @@ class Slider extends React.Component {
     });
 
     return (
-      <div ref="slider" className={sliderClassName}
+      <div ref="slider" className={sliderClassName} {...this.props}
         onTouchStart={disabled ? noop : this.onTouchStart.bind(this)}
         onMouseDown={disabled ? noop : this.onMouseDown.bind(this)}
       >
